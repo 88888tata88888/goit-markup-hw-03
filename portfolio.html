@@ -15,12 +15,12 @@
 <body>
     
        <!--COMPONENTS-->
-       <header class="header">
-        <nav class="heade-nav">
-            <a class="logo link">
-            <span class="logo-color">Web</span>Studio
-        </a>
-        <ul class="nav-list list" >
+       <header class="header menu-border">
+        <div class="container main-logo">
+          <nav class="header-nav main-logo">
+              <a class="logo  link" href="./index.html" >
+              <span class="logo-color">Web</span>Studio</a>
+        <ul class="nav-list list">
             <li class="nav-item"><a href="./index.html" class="nav-link link">Студия</a></li>
             <li class="nav-item"><a class="active nav-link link">Портфолио</a></li>
             <li class="nav-item"><a class="nav-link link" >Контакты</a></li>
@@ -34,6 +34,7 @@
               <a class="info link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
+        </div>
     </header>
 
     <main>
@@ -71,7 +72,7 @@
 
         <!--PORTFOLIO-->
         <section class="portfolio">
-            <h2 hidden >Сайты</h2>
+            <h2 hidden>Сайты</h2>
             <ul class="portfolio-list list">
                 <li class="portfolio-kart link">
                     <img src="./images/img10.jpg" width="370" height="294" alt="Технокряк" />
@@ -124,22 +125,24 @@
 
     <!--CONTACTS-->
     <footer class="contacts">
-        <a class="link logo logo-contacts" href=""><span class="logo-color">Web</span>Studio </a>
-    <address class="address">
-        <ul class="list">
-          <li>
-            <a class="link maps" href="https://goo.gl/maps/Kj9o169cFubhBfax5" target="_blank" rel="noopener noreferrer">
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li>
-            <a class="link contacts-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="link contacts-info" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </footer>
+        <div class="container">
+          <a class="link logo logo-contacts" href="./index.html"><span class="logo-color">Web</span>Studio</a>
+      <address class="address">
+          <ul class="list">
+            <li>
+              <a class="link maps" href="https://goo.gl/maps/Kj9o169cFubhBfax5" target="_blank" rel="noopener noreferrer">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li>
+              <a class="link contacts-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="link contacts-info" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        </div>
+      </footer>
 </body>
 </html>

@@ -6,6 +6,30 @@ body {
     --secondary-color: #212121;
 	margin: 0px;
 }
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+	display: block;
+  }
 .link {
 	text-decoration: none;
 }
@@ -25,6 +49,10 @@ body {
 }
 .nav-list {
 	display: flex;
+	padding-left: 93px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-left: 93px;
 }
 .nav-item {
 	margin-right: 50px;
@@ -45,6 +73,11 @@ body {
 .active {
 	color: #2196f3;
 }
+.main-logo {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
 .info-link {
 	font-family: "Roboto", sans-serif;
 	display: flex;
@@ -53,6 +86,7 @@ body {
 	line-height: 1, 17;
 	letter-spacing: 0.02em;
 	font-style: normal;
+	padding-right: 50px;
 }
 .info {
 	color: #757575;
@@ -74,9 +108,15 @@ body {
 	text-align: center;
 	line-height: 1.36;
 	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 200px;
 }
-.hero-right-site {
+.hero {
 	background: #2f303a;
+	width: 100%;
+	height: 600px;
+	text-align: center;
 }
 .modal-btn {
 	font-family: "Roboto", sans-serif;
@@ -88,6 +128,10 @@ body {
 	cursor: pointer;
 	border-radius: 4px;
 	border: none;
+	padding: 10px 32px;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 200px;
 }
 .modal-btn:hover,
 .modal-btn {
@@ -98,9 +142,12 @@ body {
 /*===ABOUT===*/
 .about-list {
 	display: flex;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .work {
-	padding-right: 30px;
+	flex-basis: calc(100% / 4 - 30px);
+     margin-left: 30px;
 }
 .work-title {
 	font-family: "Roboto", sans-serif;
@@ -111,6 +158,7 @@ body {
 	font-style: normal;
 	color: #212121;
 	text-transform: uppercase;
+	padding-bottom: 10px;
 }
 .work-text {
 	font-family: "Roboto", sans-serif;
@@ -151,6 +199,7 @@ body {
 	width: 100%;
 	padding-top: 94px;
 	padding-bottom: 94px;
+
 }
 .masters-list {
 	display: flex;
@@ -162,8 +211,9 @@ body {
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	height: 368px;
-	width: 270px;
+	width: 370px;
 	margin-right: 30px;
+	flex-basis: calc(100% / 4 - 30px);
 }
 .work-name {
 	font-family: "Roboto", sans-serif;
@@ -173,7 +223,7 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 	color: #212121;
-	padding-top: 15px;
+	padding-top: 30px;
 	text-align: center;
 }
 .position {
@@ -185,21 +235,35 @@ body {
 	font-style: normal;
 	color: #757575;
 	text-align: center;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
 /*===END MASTERS===*/
 
 /*===CONTACTS===*/
 .contacts {
 	background-color: #2f303a;
+	width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px
 }
 .logo-color {
 	color: #2196f3;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1, 19;
+	line-height: 1,19;
 	letter-spacing: 0.03em;
+	margin-bottom: 20px;
+}
+.address,
+.list-item-contact,
+.contacts-info {
+	display: flex;
+  flex-direction: column;
+}
+.list-item-contact:not(:last-child) {
+	margin-bottom: 9px;
 }
 .logo-contacts {
 	color: #ffffff;
@@ -214,20 +278,31 @@ body {
 	color: #ffffff;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1, 71;
+	line-height: 1,71;
 	letter-spacing: 0.03em;
 	font-style: #ffffff;
+	padding-top: 20px;
+	display: block;
 }
 .contacts-info {
 	color: rgba(225, 225, 225, 0.6);
+	font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  display: block;
+  padding-top: 10px;
 }
 /*===END CONTACTS===*/
 
 /*===========PORTFOLIO===============*/
 /*===MENU===*/
+.menu-border {
+	outline: 1px solid #F5F4FA;
+}
 .menu-list {
 	display: flex;
 	justify-content: center;
+	margin-top: 94px;
 }
 .btn-menu {
 	font-family: "Roboto", sans-serif;
@@ -272,7 +347,7 @@ body {
 	font-style: normal;
 	color: #212121;
 	padding-left: 24px;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 .preview-name {
 	font-family: "Roboto", sans-serif;
@@ -283,5 +358,6 @@ body {
 	font-style: normal;
 	color: #757575;
 	padding-left: 24px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
