@@ -4,6 +4,7 @@ body {
     --secondary-font: "Raleway", sans-serif;
     --accent-color: #2196f3;
     --secondary-color: #212121;
+	margin: 0px;
 }
 .link {
 	text-decoration: none;
@@ -21,6 +22,13 @@ body {
 	font-size: 26px;
 	line-height: 1, 19;
 	letter-spacing: 0.03em;
+}
+.nav-list {
+	display: flex;
+}
+.nav-item {
+	background-color: #2196f3;
+	margin-right: 50px;
 }
 .nav-link {
 	font-family: "Roboto", sans-serif;
@@ -40,6 +48,7 @@ body {
 }
 .info-link {
 	font-family: "Roboto", sans-serif;
+	display: flex;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1, 17;
@@ -85,6 +94,9 @@ body {
 /*=== END HERO===*/
 
 /*===ABOUT===*/
+.about-list {
+	display: flex;
+}
 .work-title {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
@@ -116,6 +128,9 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 	color: #212121;
+}
+.service-list {
+	display: flex;
 }
 /*=== END SERVICES===*/
 
@@ -179,6 +194,10 @@ body {
 
 /*===========PORTFOLIO===============*/
 /*===MENU===*/
+.menu-list {
+	display: flex;
+	justify-content: center;
+}
 .btn-menu {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
@@ -189,14 +208,30 @@ body {
 	background-color: #f5f4fa;
 	border-radius: 4px;
 	border: none;
+	padding: 6px 22px;
 }
 .btn-menu:hover {
 	color: #ffffff;
 	background-color: #2196f3;
 }
+.menu-portfolio {
+	padding-right: 8px;
+}
 /*===END MENU===*/
 
 /*===PORTFOLIO===*/
+.portfolio-list {
+	flex-wrap: wrap;
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 74px;
+	justify-content: center;
+}
+.portfolio-kart {
+	outline: 1px solid #F5F4FA;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
 .site-name {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
@@ -205,6 +240,8 @@ body {
 	letter-spacing: 0.06em;
 	font-style: normal;
 	color: #212121;
+	padding-left: 24px;
+	padding-top: 10px;
 }
 .preview-name {
 	font-family: "Roboto", sans-serif;
@@ -214,4 +251,6 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 	color: #757575;
+	padding-left: 24px;
+	padding-bottom: 10px;
 }
