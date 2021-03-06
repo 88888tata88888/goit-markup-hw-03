@@ -27,7 +27,6 @@ body {
 	display: flex;
 }
 .nav-item {
-	background-color: #2196f3;
 	margin-right: 50px;
 }
 .nav-link {
@@ -57,6 +56,9 @@ body {
 }
 .info {
 	color: #757575;
+}
+.info-nav {
+	padding-right: 50px;
 }
 .info:hover,
 .info:focus {
@@ -97,6 +99,9 @@ body {
 .about-list {
 	display: flex;
 }
+.work {
+	padding-right: 30px;
+}
 .work-title {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
@@ -131,12 +136,34 @@ body {
 }
 .service-list {
 	display: flex;
+	justify-content: center;
+	margin-bottom: 94px;
+	margin-top: 50px;
+}
+.caption-pic {
+	padding-right: 30px;
 }
 /*=== END SERVICES===*/
 
 /*=== MASTERS===*/
 .masters {
 	background: #f5f4fa;
+	width: 100%;
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.masters-list {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+.captein-masters {
+	background: #ffffff;
+	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	height: 368px;
+	width: 270px;
+	margin-right: 30px;
 }
 .work-name {
 	font-family: "Roboto", sans-serif;
@@ -146,6 +173,8 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 	color: #212121;
+	padding-top: 15px;
+	text-align: center;
 }
 .position {
 	font-family: "Roboto", sans-serif;
@@ -155,6 +184,8 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 	color: #757575;
+	text-align: center;
+	padding-bottom: 15px;
 }
 /*===END MASTERS===*/
 
@@ -224,7 +255,7 @@ body {
 	flex-wrap: wrap;
 	display: flex;
 	margin-top: 50px;
-	margin-bottom: 74px;
+	margin-bottom: 94px;
 	justify-content: center;
 }
 .portfolio-kart {
